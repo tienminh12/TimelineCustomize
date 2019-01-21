@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- view of the left -->
+    <TextView
+        android:layout_marginTop="-2dp"
+        android:includeFontPadding="false"
+        android:layout_marginRight="14dp"
+        android:textColor="#17fc03"
+        android:textSize="16sp"
+        android:text="9:30 AM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- the red indicator line -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/item_line"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff00"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:background="@drawable/circle"/>
+
+    </FrameLayout>
+
+    <!-- views at the right of the red indicator line -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingBottom="20dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_marginTop="-2dp"
+            android:textColor="#2e2e2e"
+            android:includeFontPadding="false"
+            android:text="This is title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/item_title"/>
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_subtitle"/>
+
+        <!-- other views -->
+
+    </LinearLayout>
+
+</LinearLayout>
